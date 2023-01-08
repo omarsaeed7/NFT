@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  hsl(217, 54%, 11%);
+    display: flex;
+    font-family: 'Outfit', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+}
+.container{
+    width:480px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.images
+{
+    position: relative;
+    
+}
+.container .eye{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    z-index: 99999;
+    visibility:hidden ;
+    transition: opacity 1s, visibility 1s;
+}
+.container .img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index:0;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.img:hover{
+    opacity: 0.6;
+}
+.images:hover .eye{ 
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+.container .text h1{
+    margin-top: 20px;
+}
+.container .text p{
+    font-size: 20px;
+    margin-top: 1em;
+    color: rgba(213, 241, 255, 0.596);
+}
+.text{
+    margin-bottom: 20px;
+}
+.coin{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.coin .eth{
+    font-size: 20px;
+    color:  hsl(178, 100%, 50%);
+    font-weight: 700;
+}
+
+.coin .date{
+    color :rgba(213, 241, 255, 0.596);
+    font-size: 20px;
+}
+.avatar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+hr{
+    width: 100%;
+    margin-bottom: 20px;
+    color: hsl(215, 32%, 27%);
+}
+
+.avatar img
+{
+    width: 10%;
+    border: white solid 1px;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+.avatar p{
+    color:rgba(213, 241, 255, 0.596)
+}
+.avatar .jules{
+    color: white;
+    font-weight: bold;
+}
